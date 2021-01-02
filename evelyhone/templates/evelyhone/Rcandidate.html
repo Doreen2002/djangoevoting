@@ -1,0 +1,20 @@
+{% extends 'evelyhone/layout.html' %}
+
+{% block body %}
+    <form action="{% url 'Dcandidate' %}" method="POST">
+        {% csrf_token %}
+        <label >ENTER ORGAN OF INTEREST</label>
+        <input type="text" name="organ" id=""><br>
+        <label >ENTER POSITION</label>
+        <input type="text" name="position" id=""><br>
+        <label >ENTER INTAKE</label>
+        <input type="text" name="intake" id=""><br>
+        <label >ENTER COURSE</label>
+        <input type="text" name="course"><br>
+        <label >ENTER STUDENT#</label>
+        <input type="number" name="studentno" id="">
+        <input type="submit" name="" id="" value="submit">
+    </form>
+   
+
+{% endblock %}

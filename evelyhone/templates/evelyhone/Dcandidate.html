@@ -1,0 +1,23 @@
+{% extends 'evelyhone/layout.html' %}
+
+{% block body %}
+<h1>CANDIDATES LIST</h1>
+<div class="mainprofile">
+    {% for candidates in candidate %}
+    
+  
+        <div class="profile">
+        
+            <div> {{candidates.organ}}</div>
+            <div> {{candidates.position}}</div>
+            <div> {{candidates.intake}}</div>
+            <div> {{candidates.course}}</div>
+            <div> {{candidates.studentno}}</div>
+        </div>
+        {% endfor %}
+    </div>
+   
+        
+
+
+{% endblock %}
